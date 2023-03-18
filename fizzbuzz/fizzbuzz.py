@@ -32,7 +32,7 @@ def fizzbuzz(LIST:list)->list:
     fizzbuzz_list: list
         List based on LIST but replacing the divisibles items by 3 and 5 for "fizz" and "buzz".
 
-    Examples
+    Example
     --------
     >>> fizzbuzz([1,2,3,4,5])
     [1, 2, 'fizz', 4, 'buzz']
