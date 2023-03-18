@@ -16,7 +16,7 @@ Our goal is to test a starting round of fizz buzz from 1 to 100 as follow:
 
 def fizzbuzz(LIST:list)->list:
     '''
-    Evaluate each item in a list to check if it is divisible by 3, by 5 or neither.
+    Evaluate each item in a list to check if it is divisible by 3, by 5 or none.
 
     In case the item is divisible by 3, it replaces the integer by "fizz",
     in case the item is divisible by 5, it replaces the integer by "buzz",
