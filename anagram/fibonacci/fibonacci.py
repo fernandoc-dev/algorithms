@@ -17,16 +17,13 @@ def fibonacci():
     last=0
     penultimate=0
     for i in range (0,50):
-        1,2,3
+        if i==0 or i==1:
+            print(i)
+            last=1
+        else:
+            print(last+penultimate)
+            i=last
+            last=last+penultimate
+            penultimate=i
         
-        print(last+penultimate)
-        penultimate=last
-        last=last+penultimate
-        
-   
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
-    
-    print(fibonacci())
+fibonacci()
