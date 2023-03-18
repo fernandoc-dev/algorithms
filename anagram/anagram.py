@@ -37,7 +37,7 @@ def anagram(word_1,word_2):
     word_1=word_1.lower()
     word_2=word_2.lower()
 
-    if word_1.lower()==word_2.lower():
+    if word_1==word_2():
         return False
     word_1=[*word_1]
     word_1.sort()
