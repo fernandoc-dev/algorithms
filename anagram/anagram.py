@@ -5,7 +5,6 @@ An Anagram is formed by rearranging ALL the letters of one initial word.
 It is NOT necessary to check that both words exist.
 Two exactly identical words are not an anagram.
 """
-
 def anagram(word_1,word_2):
     '''
     Compare 2 words and determine if they are anagrams.
@@ -34,16 +33,9 @@ def anagram(word_1,word_2):
     >>> anagram('CalipSo','ospilac')
     True
     '''
-    word_1=word_1.lower()
-    word_2=word_2.lower()
-
-    if word_1==word_2():
+    if word_1.lower()==word_2.lower():
         return False
-    word_1=[*word_1]
-    word_1.sort()
-    word_2=[*word_2]
-    word_2.sort()
-    if word_1==word_2:
+    if sorted([*word_1.lower()])==sorted([*word_2.lower()]):
         return True
     return False
 
