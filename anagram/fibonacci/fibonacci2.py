@@ -10,16 +10,13 @@ def fibonacci():
     '''
     Print the first 50 numbers of the sequence of Fibonacci starting at 0.
     '''
-    last=0
     penultimate=0
+    last=1
+    fibonacci=1
     for i in range (0,50):
-        if i==0 or i==1:
-            print(i)
-            last=1
-        else:
-            print(last+penultimate)
-            i=last
-            last=last+penultimate
-            penultimate=i
-        
+        print(penultimate)
+        penultimate=last
+        last=fibonacci
+        fibonacci=penultimate+last
+
 fibonacci()
