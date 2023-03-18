@@ -5,7 +5,6 @@
  the one that the next is always the sum of the two previous ones.
  0, 1, 1, 2, 3, 5, 8, 13...
 """
-
 def fibonacci():
     '''
     Print the first 50 numbers of the sequence of Fibonacci starting at 0.
