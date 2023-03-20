@@ -4,7 +4,7 @@ more times to be repeated.
 - If there are no vowels, it can return empty.
 """
 
-def frequency_vocal(text)->str:
+def frequency_vowel(text)->str:
     '''
     Extract from a given text the Handle user, Handle hastag and Handle web
 
@@ -20,7 +20,7 @@ def frequency_vocal(text)->str:
 
     Example
     --------
-    >>> frequency_vocal('The users @peter and @jhon are working on www.projects.com and https://google.com about #testing')
+    >>> frequency_vowel('The users @peter and @jhon are working on www.projects.com and https://google.com about #testing')
     'o'
     '''
     text=text.lower()
@@ -40,7 +40,7 @@ def frequency_vocal(text)->str:
                 result=vocals[i]
     return result
 
-print(frequency_vocal('The users @peter and @jhon are working on www.projects.com and https://google.com about #testing'))
+print(frequency_vowel('The users @peter and @jhon are working on www.projects.com and https://google.com about #testing'))
 
 if __name__ == '__main__':
     import doctest
